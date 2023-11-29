@@ -1,0 +1,16 @@
+#7 questão 
+alunos_notas = {}
+
+for i in range(3):
+  nome_aluno = input('Digite o nome do aluno: ')
+  notas = []
+  for nota in range(4):
+    nota = int(input('Digite a nota do aluno: '))
+    notas.append(nota)
+    
+  soma_notas = sum(notas)
+  media_notas = soma_notas/len(notas)
+  
+  alunos_notas[nome_aluno] = notas
+
+  print(f"A média das notas do(a) aluno(a) {nome_aluno} é: {media_notas}")
