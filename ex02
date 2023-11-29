@@ -1,0 +1,11 @@
+#2 questão 
+frase = input("Digite uma frase: ")
+frase_modificada = "" 
+
+for caractere in frase:
+    if caractere == " ":
+        frase_modificada += "#"
+    else:
+        frase_modificada += caractere
+
+print(f"Frase modificada: {frase_modificada}")
