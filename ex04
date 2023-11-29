@@ -1,0 +1,8 @@
+#4 questao
+p1 = input("Digite a primeira palavra: ")
+p2 = input("Digite a segunda palavra: ")
+
+if p1 == p2[::-1]: #inverte a palavra
+    print("As strings são palíndromas mútuas.")
+else:
+    print("As strings não são palíndromas mútuas.")
