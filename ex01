@@ -1,0 +1,8 @@
+#1 questão
+d1 = {'a': 1, 'b': 2, 'c': 3, 'd': 3, 'e': 4, 'f': 4, 'g': 2, 'i': 2}
+
+elementos = set(d1.values())
+
+for i in elementos:
+    quantidade = list(d1.values()).count(i)
+    print(f'O elemento {i} aparece {quantidade} vez(es).')
