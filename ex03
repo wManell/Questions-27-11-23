@@ -1,0 +1,5 @@
+#3 questão 
+frase = input("Digite uma frase: ")
+palavras = frase.split()
+numero_de_palavras = len(palavras)
+print(f"A frase possui {numero_de_palavras} palavra(s).")
