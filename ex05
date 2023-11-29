@@ -1,0 +1,19 @@
+#5 Questão
+alunos_notas = {}
+
+# Loop para inserir os dados dos alunos
+for i in range(3):
+    nome_aluno = input(f"Digite o nome do aluno {i+1}: ")
+    nota1 = int(input(f"Digite a primeira nota do aluno {nome_aluno}: "))
+    nota2 = int(input(f"Digite a segunda nota do aluno {nome_aluno}: "))
+
+    # Calcula a média das notas e adiciona os dados ao dicionário
+    media = (nota1 + nota2) / 2
+    alunos_notas[nome_aluno] = media
+
+# Calcula a média geral das notas
+media_notas = sum(alunos_notas.values()) / len(alunos_notas)
+
+# Exibe o dicionário e a média das notas
+print("Dicionário de Alunos e Médias das Notas:", alunos_notas)
+print(f"Média das Notas: {media_notas}")
