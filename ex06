@@ -1,0 +1,26 @@
+#6 questão
+
+#Inicializa a lista vazia para armazenar números ímpares
+numeros_impares = []
+
+#Loop para ler números inteiros e ímpares até atingir 5 elementos na lista
+while len(numeros_impares) < 5:
+    numero = int(input("Digite um número inteiro e ímpar: "))
+    
+    #Verifica se o número é ímpar antes de adicionar à lista
+    if numero % 2 != 0:
+        numeros_impares.append(numero)
+    else:
+        print("O número digitado não é ímpar. Tente novamente.")
+
+#Converte a lista em uma tupla
+tupla_numeros = tuple(numeros_impares)
+
+#Calcula a média dos valores na tupla
+soma = sum(tupla_numeros)
+media = soma / len(tupla_numeros)
+
+#Exibe a tupla e a média
+print(f"Tupla: {tupla_numeros}")
+print(f"Média: {media}")
+
